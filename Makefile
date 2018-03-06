@@ -1,5 +1,5 @@
-run: hello
-	./hello input.scheme
+run: main
+	./build/main input.scheme
 
-hello: hello.hs
-	ghc hello.hs
+main: main.hs
+	ghc -odir build main.hs
